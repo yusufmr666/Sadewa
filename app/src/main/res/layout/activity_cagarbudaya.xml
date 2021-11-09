@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CagarbudayaActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="247dp"
+        android:background="@drawable/headers">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="20dp">
+            <TextView
+                android:id="@+id/hi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hi..."
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="24dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hi"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Ingin tahu cagar budaya yang ada di Kota Salatiga?\nyuk lihat disini"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/ic_background_list"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <SearchView
+            android:layout_marginTop="15dp"
+            android:id="@+id/simpleSearchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:iconifiedByDefault="false"
+            android:queryHint="Search Here"
+            android:background="@drawable/ic_backgroud_shadow"
+            android:queryBackground="@android:color/transparent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listcag"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/simpleSearchView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:scrollbars="none"
+            android:divider="@null"
+            android:dividerHeight="0dp"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

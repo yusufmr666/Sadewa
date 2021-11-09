@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    android:scrollbars="none">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="485dp"
+       android:id="@+id/images"
+       android:scaleType="centerCrop"
+       />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="145dp"
+    android:layout_marginTop="330dp"
+    android:padding="10dp"
+    android:id="@+id/relnam"
+    android:background="@drawable/ic_transparent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        >
+
+    <TextView
+        android:textSize="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/nama"
+        android:id="@+id/namdet"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+    <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/namdet"
+    android:id="@+id/icloc"
+    android:src="@drawable/ic_baseline_location_on_24"
+    android:layout_marginTop="8dp"/>
+    <TextView
+        android:layout_toEndOf="@+id/icloc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nama"
+        android:textColor="@color/white"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/namdet"
+        android:id="@+id/alamatt"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="8dp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:background="@drawable/ic_background2">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nama"
+            android:textSize="16dp"
+            android:justificationMode="inter_word"
+            android:layout_marginTop="40dp"
+           android:id="@+id/deskripsi"/>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sumber"
+            android:textSize="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/deskripsi"
+            android:id="@+id/sumber"/>
+
+        <Button
+            android:id="@+id/btn_lihat_rute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Lihat rute"
+            android:layout_below="@+id/sumber"
+            android:background="@drawable/ic_backgroundlist"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_lihat_rute"
+            android:text="Foto galeri :"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:id="@+id/galeri"/>
+        <ImageView
+            android:layout_below="@id/galeri"
+            android:layout_marginTop="10dp"
+            android:id="@+id/gambar1"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="304dp"/>
+
+        <ImageView
+            android:layout_below="@id/gambar1"
+            android:layout_marginTop="10dp"
+            android:id="@+id/gambar2"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="304dp"/>
+        <ImageView
+            android:layout_below="@id/gambar2"
+            android:layout_marginTop="10dp"
+            android:id="@+id/gambar3"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="304dp"
+            android:layout_marginBottom="50dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+</ScrollView>

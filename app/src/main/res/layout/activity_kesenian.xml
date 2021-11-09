@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KesenianActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="247dp"
+        android:background="@drawable/logo_ui">
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/ic_background"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/daftarwis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daftar Kesenian"
+            android:layout_marginTop="10dp"
+
+            android:textAlignment="center"/>
+        <SearchView
+            android:layout_marginTop="5dp"
+            android:id="@+id/simpleSearchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:iconifiedByDefault="false"
+            android:queryHint="Search Here"
+            android:layout_below="@id/daftarwis"
+            android:background="@drawable/ic_backgroud_shadow"
+            android:queryBackground="@android:color/transparent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listcag"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/simpleSearchView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:scrollbars="none"
+            android:divider="@null"
+            android:dividerHeight="0dp"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

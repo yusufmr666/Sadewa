@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "81545793426",
+    "project_id": "cobalagi-83b8b",
+    "storage_bucket": "cobalagi-83b8b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:81545793426:android:450c8b85006019707b3b4b",
+        "android_client_info": {
+          "package_name": "com.example.cobalagi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "81545793426-c6hfrbofp42nar5ni6d0419dp4f7dqf8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7AA-dyfvJD7luxqWgpIl3sukhp2kGCRc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "81545793426-c6hfrbofp42nar5ni6d0419dp4f7dqf8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

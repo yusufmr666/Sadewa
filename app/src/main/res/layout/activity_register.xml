@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backlog"
+    tools:context=".Register"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_logologin"
+        android:id="@+id/imgreg"
+        android:layout_marginTop="95dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@id/imgreg"
+            android:background="@drawable/ic_backgroundlist"
+            android:id="@+id/relreg">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:text="@string/reistrasi"
+        android:textColor="@color/green"
+        android:textSize="24dp"/>
+
+    <EditText
+        android:id="@+id/fullName"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/ic_background_editprofile"
+        android:ems="10"
+        android:hint="@string/username"
+        android:textStyle="bold"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="@color/green"
+        android:textColorHint="@color/green"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fullName"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/ic_background_editprofile"
+        android:ems="10"
+        android:textStyle="bold"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColor="@color/green"
+        android:textColorHint="@color/green"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Email"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/ic_background_editprofile"
+        android:ems="10"
+        android:textStyle="bold"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="@color/green"
+        android:textColorHint="@color/green"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/ic_background_editprofile"
+        android:ems="10"
+        android:textStyle="bold"
+        android:hint="@string/nomor_hp"
+        android:inputType="textPhonetic"
+        android:padding="10dp"
+        android:textColor="@color/green"
+        android:textColorHint="@color/green"
+        android:textSize="14sp"/>
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/register"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+    <TextView
+        android:id="@+id/createText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registerBtn"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="25dp"
+        android:text="Sudah melakukan registrasi?\nlogin disini"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/green"/>
+            </RelativeLayout>
+            </RelativeLayout>
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/relreg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:visibility="invisible"
+           />
+    </RelativeLayout>
+</ScrollView>
